@@ -13,12 +13,12 @@ export class WeatherService {
 
   getWeatherData = (cityName: string): Observable<WeatherData> => {
     const params = new URLSearchParams({
-      access_key: environment.weatherApiKey,
+      access_key: '8a1b0427945eb413cf085cb4d8767427',
       query: cityName,
       units: 'm',
     });
 
-    const completeURL = `${environment.weatherApiBaseUrl}${params}`;
+    const completeURL = `http://api.weatherstack.com/current?${params}`;
     // console.log(completeURL)
     return this.http.get<WeatherData>(completeURL);
   };
