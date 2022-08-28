@@ -3,7 +3,15 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  // weatherApiBaseUrl:'https://open-weather-map27.p.rapidapi.com/weather',
+  // XRapidAPIHost:'X-RapidAPI-Host',
+  // XRapidAPIHostValue:'open-weather-map27.p.rapidapi.com',
+  // XRapidAPIKey :'X-RapidAPI-Key',
+  // XRapidAPIKeyValue :'94cbf624cdmsha560b956f45a9f0p16a7c3jsn988ab6dd89e5'
+  weatherApiBaseUrl:'http://api.weatherstack.com/current?',
+  // weatherApiKey : 'dd160f2bd1980c6fee8490b6a689f012'
+  weatherApiKey : '8a1b0427945eb413cf085cb4d8767427'
 };
 
 /*
